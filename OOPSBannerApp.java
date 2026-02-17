@@ -1,20 +1,49 @@
 /**
- * OOPSBannerApp UC2 - Banner Display Application
- *
- * This class demonstrates the creation of a visual banner displaying
- * the word "OOPS" using ASCII art composed of asterisks (*) and spaces.
- *
+ * OOPSBannerApp UC3 - OOPS Banner Display Application(Use Case 3)
  * @author Developer
- * @version 2.0
+ * @version 3.0
  */
 public class OOPSBannerApp {
+
     public static void main(String[] args) {
-        System.out.println("  *****     *****     *****     *****  ");
-        System.out.println(" *     *   *     *   *     *   *       ");
-        System.out.println(" *     *   *     *   *     *   *       ");
-        System.out.println(" *     *   *     *   *****      *****  ");
-        System.out.println(" *     *   *     *   *               * ");
-        System.out.println(" *     *   *     *   *               * ");
-        System.out.println("  *****     *****    *          *****  ");
+
+        String line1 = String.join("   ",
+                " ***** ",
+                " ***** ",
+                " ******",
+                " ******");
+
+        String line2 = String.join("   ",
+                "**   **",
+                "**   **",
+                "**   **",
+                "**     ");
+
+        String line3 = String.join("   ",
+                "**   **",
+                "**   **",
+                "****** ",
+                " ***** ");
+
+        String line4 = String.join("   ",
+                "**   **",
+                "**   **",
+                "**      ",
+                "     **");
+
+        String line5 = String.join("   ",
+                " ***** ",
+                " ***** ",
+                "**      ",
+                " ******");
+
+        System.out.println(line1);
+        System.out.println(line2);
+        System.out.println(line3);
+        System.out.println(line4);
+        System.out.println(line5);
     }
 }
+
+
+
