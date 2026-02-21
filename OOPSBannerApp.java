@@ -1,7 +1,7 @@
 /**
- * OOPSBannerApp UC3 - OOPS Banner Display Application(Use Case 3)
+ * OOPSBannerApp UC4 - Render OOPS as Banner using String Array and Loop
  * @author Developer
- * @version 3.0
+ * @version 4.0
  */
 public class OOPSBannerApp {
 
