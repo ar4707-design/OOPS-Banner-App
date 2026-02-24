@@ -1,49 +1,55 @@
 /**
- * OOPSBannerApp UC4 - Render OOPS as Banner using String Array and Loop
+ * OOPSBannerApp UC5 – Render OOPS as Banner using Inline Array Initialization
+ *
+ * This use case extends UC4 by defining and populating the String array
+ * at the time of declaration using String.join() method to create each
+ * line of the banner. This enhances readability and maintainability.
+ *
  * @author Developer
- * @version 4.0
+ * @version 5.0
  */
+
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        String line1 = String.join("   ",
-                " ***** ",
-                " ***** ",
-                " ******",
-                " ******");
 
-        String line2 = String.join("   ",
-                "**   **",
-                "**   **",
-                "**   **",
-                "**     ");
+        String[] lines = {
 
-        String line3 = String.join("   ",
-                "**   **",
-                "**   **",
-                "****** ",
-                " ***** ");
+            String.join("   ",
+                    " ***** ",
+                    " ***** ",
+                    " ******",
+                    " ******"),
 
-        String line4 = String.join("   ",
-                "**   **",
-                "**   **",
-                "**      ",
-                "     **");
+            String.join("   ",
+                    "**   **",
+                    "**   **",
+                    "**   **",
+                    "**      "),
 
-        String line5 = String.join("   ",
-                " ***** ",
-                " ***** ",
-                "**      ",
-                " ******");
+            String.join("   ",
+                    "**   **",
+                    "**   **",
+                    "****** ",
+                    " *****  "),
 
-        System.out.println(line1);
-        System.out.println(line2);
-        System.out.println(line3);
-        System.out.println(line4);
-        System.out.println(line5);
+            String.join("   ",
+                    "**   **",
+                    "**   **",
+                    "**      ",
+                    "     **"),
+
+            String.join("   ",
+                    " ***** ",
+                    " ***** ",
+                    "**      ",
+                    " ******")
+        };
+
+        // Print banner using for-each loop
+        for (String line : lines) {
+            System.out.println(line);
+        }
     }
 }
-
-
-
